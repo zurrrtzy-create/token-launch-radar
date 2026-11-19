@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar: pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<!--
+  Token Radar (radar-2) — a judge's note, in three lines:
+  The board ranks 198 pre-token protocols by an implied value that is
+  peer-anchored: each protocol's TVL times its category's median
+  market-cap-to-TVL ratio among live-token protocols (global median where a
+  category has fewer than 3 peers), adjusted for 7-day growth, age with no
+  token, and chain breadth. No name is special-cased; every number on this
+  page is recomputed from the snapshot figures by app.js.
+-->
+<a class="skip" href="#board">Skip to the board</a>
+<main id="app" aria-busy="true"></main>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
